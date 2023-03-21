@@ -1,3 +1,3 @@
-class Conflict {}
+class firstConlfict {}
 
-class first {}
+class Conflict {}
