@@ -9,6 +9,7 @@ import 'package:my_notes_with_firebase_mvvm/view/widgets/appbar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+// ignore: must_be_immutable
 class ScreenSignUp extends StatelessWidget {
   ScreenSignUp({super.key});
 

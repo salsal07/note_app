@@ -7,6 +7,7 @@ import 'package:my_notes_with_firebase_mvvm/res/type.dart';
 import 'package:my_notes_with_firebase_mvvm/view/home/widgets/save_note.dart';
 import 'package:my_notes_with_firebase_mvvm/view_model/home_controller.dart';
 
+// ignore: must_be_immutable
 class NotesGrid extends StatelessWidget {
   NotesGrid({
     Key? key,

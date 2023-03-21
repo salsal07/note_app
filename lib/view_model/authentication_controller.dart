@@ -50,6 +50,7 @@ class AuthController extends GetxController {
         .toUpperCase();
     log('-------- Acces Token is : ${userCredential!.credential!.accessToken} -------');
     log('-------- Token is : ${userCredential!.credential!.token} -------');
+    // ignore: use_build_context_synchronously
     Navigator.pushNamed(context, KRoutesName.home);
     sharePref.setString(logged, userCredential!.credential!.token.toString());
     sharePref.get(logged);
@@ -117,6 +118,7 @@ class AuthController extends GetxController {
     try {
       if (!kIsWeb) {
         await googleSignIn.signOut(); //android and ios
+        // ignore: use_build_context_synchronously
         Navigator.pushNamed(context, KRoutesName.landing);
         sharePref.clear();
         update();

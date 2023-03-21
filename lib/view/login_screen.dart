@@ -9,6 +9,7 @@ import 'package:my_notes_with_firebase_mvvm/view/widgets/appbar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+// ignore: must_be_immutable
 class ScreenLogin extends StatelessWidget {
   ScreenLogin({super.key});
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
@@ -80,7 +81,7 @@ class ScreenLogin extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   Row(
@@ -118,7 +119,7 @@ class ScreenLogin extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   ActionButton(

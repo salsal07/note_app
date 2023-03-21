@@ -6,7 +6,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
 import 'package:my_notes_with_firebase_mvvm/main.dart';
-import 'package:my_notes_with_firebase_mvvm/res/asset/images.dart';
 import 'package:my_notes_with_firebase_mvvm/res/colors.dart';
 import 'package:my_notes_with_firebase_mvvm/res/strings.dart';
 import 'package:my_notes_with_firebase_mvvm/res/styles.dart';
@@ -16,7 +15,7 @@ import 'package:my_notes_with_firebase_mvvm/view_model/authentication_controller
 import 'package:my_notes_with_firebase_mvvm/view_model/home_controller.dart';
 
 class ScreenHome extends StatefulWidget {
-  ScreenHome({Key? key}) : super(key: key);
+  const ScreenHome({Key? key}) : super(key: key);
 
   @override
   State<ScreenHome> createState() => _ScreenHomeState();
@@ -43,7 +42,6 @@ class _ScreenHomeState extends State<ScreenHome> {
       }
     });
     FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) {
-      print('a new on message opened app event published');
       RemoteNotification? notification = message.notification;
       AndroidNotification? android = message.notification?.android;
       if (notification != null && android != null) {

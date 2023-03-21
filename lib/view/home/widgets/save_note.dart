@@ -7,6 +7,7 @@ import 'package:my_notes_with_firebase_mvvm/res/type.dart';
 import 'package:my_notes_with_firebase_mvvm/view/splash_screen.dart';
 import 'package:my_notes_with_firebase_mvvm/view_model/home_controller.dart';
 
+// ignore: must_be_immutable
 class SaveNote extends StatelessWidget {
   final ActionType type;
   final String? title;

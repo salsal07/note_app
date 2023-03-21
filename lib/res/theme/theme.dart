@@ -45,9 +45,6 @@ class KTheme {
     appBarTheme: const AppBarTheme(backgroundColor: KColors.kWhite),
     bottomNavigationBarTheme:
         const BottomNavigationBarThemeData(backgroundColor: KColors.kWhite),
-//--------------theme datas---------------//
-    backgroundColor: KColors.kWhite,
-    colorScheme: ColorScheme.fromSwatch().copyWith(primary: KColors.kBlack),
     visualDensity: VisualDensity.adaptivePlatformDensity,
     // splashColor:KColors.kTransperent ,
     //highlightColor: KColors.kTransperent,
@@ -59,6 +56,9 @@ class KTheme {
 
 //--------------font family---------------//
     fontFamily: 'Poppins',
+    colorScheme: ColorScheme.fromSwatch()
+        .copyWith(primary: KColors.kBlack)
+        .copyWith(background: KColors.kWhite),
   );
 
   ThemeData get theme => _themeData;

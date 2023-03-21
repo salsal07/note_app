@@ -24,7 +24,7 @@ class CustomText extends StatelessWidget {
         controller: controller,
         decoration: InputDecoration(
             border: InputBorder.none,
-            hintStyle: TextStyle(color: KColors.kGrey),
+            hintStyle: const TextStyle(color: KColors.kGrey),
             hintText: text),
         style: style);
   }

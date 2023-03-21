@@ -21,7 +21,6 @@ class KRoute {
   //in this below normal generatod method is ther
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
-
       //---splash screen rout
       case KRoutesName.splash:
         return kPageBuilder(
@@ -41,7 +40,7 @@ class KRoute {
             Animation<double> animation,
             Animation<double> secondaryAnimation,
           ) =>
-              ScreenLanding(),
+              const ScreenLanding(),
         );
       //---login screen rout
       case KRoutesName.login:
@@ -73,7 +72,7 @@ class KRoute {
             Animation<double> animation,
             Animation<double> secondaryAnimation,
           ) =>
-              ScreenHome(),
+              const ScreenHome(),
         );
 
       //---page not found screen rout

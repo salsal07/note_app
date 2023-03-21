@@ -59,7 +59,7 @@ class CustomFormfield extends StatelessWidget {
         suffixIcon: suffix,
         hintText: name,
         hintStyle: KStyle.content(color: KColors.kGrey, size: 13),
-        contentPadding: EdgeInsets.only(left: 20, top: 10),
+        contentPadding: const EdgeInsets.only(left: 20, top: 10),
         // labelText: name,
 
         fillColor: KColors.kGrey.withOpacity(.08),
