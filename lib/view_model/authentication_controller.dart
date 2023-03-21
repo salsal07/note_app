@@ -126,7 +126,8 @@ class AuthController extends GetxController {
       await FirebaseAuth.instance.signOut(); //work withweb
       update();
     } catch (e) {
-      log('Error signing out. Try again.');
+      log('Error signing out. Try again later.');
+      log('Error signing out. Try again later.');
     }
   }
 }
