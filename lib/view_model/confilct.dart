@@ -1,1 +1,3 @@
 class Conflict {}
+
+class first {}
