@@ -3,11 +3,13 @@ import 'package:get/get.dart';
 import 'package:my_notes_with_firebase_mvvm/res/asset/images.dart';
 import 'package:my_notes_with_firebase_mvvm/res/strings.dart';
 import 'package:my_notes_with_firebase_mvvm/res/styles.dart';
+import 'package:my_notes_with_firebase_mvvm/utils/dynamic_link.dart';
 import 'package:my_notes_with_firebase_mvvm/utils/routes/routes_name.dart';
 import 'package:my_notes_with_firebase_mvvm/view/splash_screen.dart';
 import 'package:my_notes_with_firebase_mvvm/res/components/action_button.dart';
 import 'package:my_notes_with_firebase_mvvm/view/widgets/scaffold_back_ground.dart';
 import 'package:my_notes_with_firebase_mvvm/view_model/authentication_controller.dart';
+import 'package:share_plus/share_plus.dart';
 
 import '../res/colors.dart';
 
@@ -68,6 +70,7 @@ class _ScreenLandingState extends State<ScreenLanding> {
                   widget: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
+                      const Spacer(),
                       Container(
                         height: 18,
                         width: 18,
@@ -83,6 +86,15 @@ class _ScreenLandingState extends State<ScreenLanding> {
                         width: 7,
                       ),
                       Text(KString.googleAuthButton, style: KStyle.title()),
+                      const Spacer(),
+                      IconButton(
+                          color: Colors.blueAccent,
+                          onPressed: () {
+                            DynamicLinking()
+                                .createLink('iGuj')
+                                .then((value) => Share.share(value));
+                          },
+                          icon: const Icon(Icons.share)),
                     ],
                   ),
                   onTap: () {

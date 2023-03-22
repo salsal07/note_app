@@ -1,3 +1,0 @@
-class firstConlfict {}
-
-class Conflict {}

@@ -15,7 +15,7 @@ class MainAppBar extends StatelessWidget {
       children: [
         IconButton(
           onPressed: () {
-            Navigator.canPop(context);
+            Navigator.pop(context);
           },
           icon: Icon(
             Icons.arrow_back,

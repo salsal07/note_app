@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:my_notes_with_firebase_mvvm/res/strings.dart';
 import 'package:my_notes_with_firebase_mvvm/res/theme/theme.dart';
+import 'package:my_notes_with_firebase_mvvm/utils/dynamic_link.dart';
 import 'package:my_notes_with_firebase_mvvm/utils/routes/route.dart';
 import 'package:my_notes_with_firebase_mvvm/utils/routes/routes_name.dart';
 
@@ -27,6 +28,8 @@ Future<void> main() async {
   await Firebase.initializeApp();
   FirebaseMessaging.onBackgroundMessage(_firebaseMessagingbackgroundHandler);
 
+//  init dynamic linking
+  DynamicLinking().initDynamicLink();
   await flutterLocalNotificationsPlugin
       .resolvePlatformSpecificImplementation<
           AndroidFlutterLocalNotificationsPlugin>()
