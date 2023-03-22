@@ -13,7 +13,7 @@ class DynamicLinking {
             bundleId: 'com.example.my_notes_with_firebase_mvvm',
             minimumVersion: '0'),
         link: Uri.parse(url),
-        uriPrefix: 'https://beatzmusicmojjoo.page.link');
+        uriPrefix: 'https://mynotesmvvm.page.link');
     FirebaseDynamicLinks link = FirebaseDynamicLinks.instance;
     final refLink = await link.buildShortLink(parameters);
     return refLink.shortUrl.toString();
